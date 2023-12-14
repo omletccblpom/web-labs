@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="bg" lang = "ru">
+    <title>Форма обращения</title>
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0" >
+        <title>Я кто?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>o((>ω<))o Я Кто? ( •̀ ω •́ )✧</h1>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="goyda.html">Таблица</a></li>
+                    <li><a href="about.html">Что я делаю</a></li>
+                    <li><a href="auth.html">Авторизация</a></li>
+                    <li><a href="feedback.html">Форма отзыва</a></li>
+                </ol>
+            </nav>
+        </header>
+        <h2 class="form">Ваш отзыв</h2>
+        <div class="form">
+            <form action="https://httpbin.org/post" method="POST">
+                <div class="form">
+                    <input type="text" id="name"><br>
+                    <label for ="name">Ваше имя</label><br><br>
+                </div>
+                <div class="form">
+                    <input name="surname" type="text" id="surname" required><br>
+                    <label for ="surname">Ваша фамилия</label><br><br>
+                </div>
+                    <input name="lastname" type="text" id="lastname" required><br>
+                    <label for ="lastname">Ваше отчество</label><br><br>
+                <div class="form">
+                    <input name="email" type="email" id="email" required><br>
+                    <label for ="email">Электронная почта</label><br><br>
+                </div>
+                <div class="form">
+                    <label for ="where">Откуда узнали о нас?</label><br>
+                </div>
+                <div class="form">
+                    <input type="radio" id="friend" name="wherefrom" value="friend" checked>
+                    <label for="friend">От друзей</label>
+                </div>
+                
+                <div class="form">
+                    <input type="radio" id="internet" name="wherefrom" value="internet">
+                    <label for="internet">Из интернета</label>
+                </div>
+                
+                <div class="form">
+                    <input type="radio" id="ad" name="wherefrom" value="ad">
+                    <label for="ad">Из рекламы</label>
+                </div><br><br>
+
+                <div class="form">
+                    <select name="why" id="why">
+                        <option value="">Выберите вариант</option>
+                        <option value="thank">Благодарность</option>
+                        <option value="sugg">Предложение</option>
+                    </select><br>
+                    <label for ="why">Зачем обращаетесь?</label><br><br>
+                </div>
+                <div class="form">
+                    <textarea id="bigtext" name="why" rows="5" cols="33" required>
+
+                    </textarea><br><br>
+                </div>
+                <div class="form">
+                    <label for ="attach">Вложения</label><br>
+                    <input type="file" id="attach" name="somefile" accept=".doc, .docx, .pdf"><br><br>
+                </div>
+                <div class="form">
+                    <input name="persdata" type="checkbox" id="persdata" required>
+                    <label for ="persdata">Даю согласие на обработку персональных данных:</label><br><br>
+                </div>
+                <div class="form">
+                    <button>Отправить</button>
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            
+            &copy; Я Кто &trade;
+            <p>Подпишись на мой <a href="https://t.me/imwhob">паблик</a></p>
+            <aside>
+                <div>Прежде, чем нажимать на Евгения или слово "ГОЙДА", лучше снимите наушники/убавьте громкость браузера :3</div>
+                <audio id="oooblya" src="sounds/zhenya.ogg"></audio>
+                <a onclick="document.getElementById('oooblya').play();">
+                <img src="images/где-боеприпасы.gif" width="50" alt = "где-боеприпасы.gif">
+            </a></aside>
+        </footer>
+    </body>
+</html>

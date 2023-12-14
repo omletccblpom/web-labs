@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="bg" lang = "ru">
+    <title>Авторизуйтесь</title>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Я кто?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>o((>ω<))o Я Кто? ( •̀ ω •́ )✧</h1>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="goyda.html">Таблица</a></li>
+                    <li><a href="about.html">Что я делаю</a></li>
+                    <li><a href="auth.html">Авторизация</a></li>
+                    <li><a href="feedback.html">Форма отзыва</a></li>
+                </ol>
+            </nav>
+        </header>
+        <form class="form" action="https://httpbin.org/post" method="POST">
+            <div>
+                <label for="login">Введите свой логин:</label>
+                <input type="text" name="login" id="login" placeholder="Введите логин">
+            </div>
+            <div>
+                <label for="password">Введите свой пароль:</label>
+                <input type="password" name="password" id="password" placeholder="Введите пароль">
+            </div>
+            <div>
+                <label for="checkbox"></label>
+                <input type="checkbox" name="remember" id="checkbox" value="true">
+                Запомните меня
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
